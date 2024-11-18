@@ -28,7 +28,7 @@ export const Navbar = () => {
         </button>
       </div>
       {isDropdownOpen ? (
-        <div className="flex flex-col top-[60px] z-20 sticky w-full bg-[#F3FAFF] gap-3 p-2 items-center">
+        <div className="flex flex-col shadow-lg top-[60px] z-20 sticky w-full bg-[#F3FAFF] gap-3 p-2 items-center">
           <button
             className="text-[18px] hover:text-[#054166] transition-colors duration-300"
             onClick={() => {
