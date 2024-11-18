@@ -15,7 +15,7 @@ export const Navbar = () => {
 
   return isPhone ? (
     <>
-      <div className="flex flex-row justify-between px-4 py-2 bg-[#F3FAFF]">
+      <div className="flex flex-row justify-between shadow-lg px-4 py-2 bg-[#F3FAFF]">
         <Logo className="w-[180px]" />
         <button type="button" onClick={handleOpenMenu}>
           <Menu />
@@ -45,7 +45,7 @@ export const Navbar = () => {
       ) : null}
     </>
   ) : (
-    <div className="flex flex-row py-8 px-20 justify-between bg-[#F3FAFF] w-full">
+    <div className="flex flex-row py-8 px-20 justify-between shadow-lg bg-[#F3FAFF] w-full sticky top-0 z-50">
       <Logo />
       <div className="flex flex-row gap-10 self-center">
         <Link className="text-[24px] hover:text-[#054166]" href={"/"}>
