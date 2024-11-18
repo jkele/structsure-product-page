@@ -21,7 +21,7 @@ export const Navbar = () => {
 
   return isPhone ? (
     <>
-      <div className="flex flex-row justify-between shadow-lg px-4 py-2 bg-[#F3FAFF]">
+      <div className="flex flex-row w-full justify-between shadow-lg px-4 py-2 bg-[#F3FAFF] sticky top-0 z-50">
         <Logo className="w-[180px]" />
         <button type="button" onClick={handleOpenMenu}>
           <Menu />
@@ -31,19 +31,28 @@ export const Navbar = () => {
         <div className="flex flex-col bg-[#F3FAFF] gap-3 p-2 items-center transition-transform transform duration-300 ease-in-out">
           <button
             className="text-[18px] hover:text-[#054166] transition-colors duration-300"
-            onClick={() => scrollToSection("home")}
+            onClick={() => {
+              handleOpenMenu();
+              scrollToSection("home");
+            }}
           >
             Home
           </button>
           <button
             className="text-[18px] hover:text-[#054166] transition-colors duration-300"
-            onClick={() => scrollToSection("aboutUs")}
+            onClick={() => {
+              handleOpenMenu();
+              scrollToSection("aboutUs");
+            }}
           >
             About Us
           </button>
           <button
             className="text-[18px] hover:text-[#054166] transition-colors duration-300"
-            onClick={() => scrollToSection("contact")}
+            onClick={() => {
+              handleOpenMenu();
+              scrollToSection("contact");
+            }}
           >
             Contact
           </button>
