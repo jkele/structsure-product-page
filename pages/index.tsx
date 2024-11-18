@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="flex flex-col bg-[#F3FAFF]">
+    <div className="flex flex-col bg-[#F3FAFF]" id="home">
       <Navbar />
       <div className="w-full h-[700px] relative">
         <div className="w-full h-full z-10 bg-[#0B0C3A61] absolute"></div>
@@ -25,7 +25,10 @@ export default function Home() {
           engineering projects, precisely and efficiently.
         </p>
       </div>
-      <div className="flex flex-col text-center text-[24px] gap-10 w-[700px] self-center py-[100px]">
+      <div
+        id="aboutUs"
+        className="flex flex-col text-center text-[24px] gap-10 w-[700px] self-center py-[100px]"
+      >
         <p>
           &quot;At StructSure, we specialize in advanced management of puncture
           analysis for civil engineering projects.
@@ -43,7 +46,9 @@ export default function Home() {
       <div className="w-full h-[700px] relative">
         <Image src={"/images/app.png"} fill alt="" className="object-contain" />
       </div>
-      <Services />
+      <div id="">
+        <Services />
+      </div>
     </div>
   );
 }
