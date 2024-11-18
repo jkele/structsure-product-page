@@ -60,7 +60,7 @@ export const Navbar = () => {
       ) : null}
     </>
   ) : (
-    <div className="flex flex-row py-8 px-20 justify-between shadow-lg bg-[#F3FAFF] w-full sticky top-0 z-50">
+    <div className="flex flex-row py-6 px-20 justify-between shadow-lg bg-[#F3FAFF] w-full sticky top-0 z-50">
       <Logo />
       <div className="flex flex-row gap-10 self-center">
         <button
