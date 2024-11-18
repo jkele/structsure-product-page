@@ -55,6 +55,14 @@ export default function Home() {
       <div id="contactUs">
         <ContactUs />
       </div>
+      <div className="w-full h-[150px] lg:h-[400px] relative">
+        <Image
+          src={"/images/skyline.png"}
+          fill
+          alt=""
+          className="object-contain"
+        />
+      </div>
     </div>
   );
 }
