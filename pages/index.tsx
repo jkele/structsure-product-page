@@ -1,6 +1,7 @@
 import { ContactUs } from "@/src/components/contact-us/ContactUs";
 import { Navbar } from "@/src/components/navbar/Navbar";
 import { Services } from "@/src/components/services/Services";
+import { Testimonials } from "@/src/components/testimonials/Testimonials";
 import Image from "next/image";
 
 export default function Home() {
@@ -52,6 +53,7 @@ export default function Home() {
       <div>
         <Services />
       </div>
+      <Testimonials />
       <div id="contactUs">
         <ContactUs />
       </div>
